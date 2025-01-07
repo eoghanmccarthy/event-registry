@@ -8,8 +8,8 @@ Create your event registry:
 
 ```javascript
 const events = createEventRegistry({
-logout: 'LOGOUT',
-notify: 'NOTIFY'
+    logout: 'LOGOUT',
+    notify: 'NOTIFY'
 });
 ```
 Dispatch events from anywhere:
@@ -17,14 +17,14 @@ Dispatch events from anywhere:
 events.logout.dispatch({ reason: 'timeout' });
 
 events.notify.dispatch({
-message: 'Hello',
-type: 'success'
+    message: 'Hello',
+    type: 'success'
 });
 ```
 Subscribe to events:
 ```javascript
 const unsubscribe = events.logout.subscribe(data => {
-console.log('Logout:', data.reason);
+    console.log('Logout:', data.reason);
 });
 
 // Remember to cleanup
