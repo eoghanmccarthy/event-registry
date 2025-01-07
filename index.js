@@ -3,7 +3,7 @@
  * This is a utility to help organize your application's events in one place.
  *
  * @param {Object} eventsConfig - An object mapping event names to their types
- * Example: { logout: 'AUTH_LOGOUT', addNotification: 'NOTIFICATION_ADD' }
+ * Example: { logout: 'LOGOUT', notify: 'NOTIFY' }
  */
 const createEventRegistry = (eventsConfig) => {
     /**
